@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Reclaiming Feeds</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/start/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <script src="js/init.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="content">
+            
+            <h1>Health Journeys</h1>
+
+            <h2>Live Feed <span class="notbold">(updated with each refresh of the page)</span></h2>
+            <div id="feed"></div>
+            
+            <div id="cart">
+                <h1 class="ui-widget-header ui-corner-top">Journey Flow</h1>
+                <div class="ui-widget-content ui-corner-bottom">
+                  <ol>
+                    <li class="placeholder">Add your Modules here</li>
+                  </ol>
+                </div>
+            </div>
+            
+            <div class="leftfilteraccordion accordion">
+                <h1 class="ui-widget-header">Articles by Category</h1>
+                <div id="categories" class="catalog accordion">
+                    <!--
+                  <h2><a href="#">Cat 1</a></h2>
+                  <div>
+                    <ul>
+                      <li>Lolcat Shirt</li>
+                      <li>Cheezeburger Shirt</li>
+                      <li>Buckit Shirt</li>
+                    </ul>
+                  </div>
+                  <h2><a href="#">Cat 2</a></h2>
+                  <div>
+                    <ul>
+                      <li>Zebra Striped</li>
+                      <li>Black Leather</li>
+                      <li>Alligator Leather</li>
+                    </ul>
+                  </div>
+                  <h2><a href="#">Gadgets</a></h2>
+                  <div>
+                    <ul>
+                      <li>iPhone</li>
+                      <li>iPod</li>
+                      <li>iPad</li>
+                    </ul>
+                  </div>
+                  -->
+                </div>
+                
+                <h1 class="ui-widget-header">Articles by Tag</h1>
+               
+                <div id="tags" class="catalog accordion">
+
+                </div>
+                
+                
+            </div>
+
+            
+              
+            
+            
+        </div>
+        
+        <div class="clearfix"></div>
+        <hr>
+        <br>
+        
+        <div id="containers">
+            <div class="split">
+                <h2 class="ui-widget-header ui-corner-top"><span class="ui-icon ui-icon-trash">Trash</span> Ignore for Now</h2>
+                <div id="ignorefornow"  class="ui-widget-content ui-corner-bottom  ui-state-default">
+
+                </div>
+            </div>
+            <div class="split">
+                <h2 class="ui-widget-header ui-corner-top"><span class="ui-icon ui-icon-folder-open">Folder</span> Save for Later</h2>
+                <div id="saveforlater" class="ui-widget-content ui-corner-bottom ui-state-default">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="trash-ex">
+            
+            <!-- http://jqueryui.com/droppable/#photo-manager -->
+            
+            <div class="ui-widget ui-helper-clearfix">
+ 
+            <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
+              <li class="ui-widget-content ui-corner-tr">
+                <h5 class="ui-widget-header">High Tatras</h5>
+                <img src="images/high_tatras_min.jpg" alt="The peaks of High Tatras" width="96" height="72" />
+                <a href="images/high_tatras.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+              </li>
+              <li class="ui-widget-content ui-corner-tr">
+                <h5 class="ui-widget-header">High Tatras 2</h5>
+                <img src="images/high_tatras2_min.jpg" alt="The chalet at the Green mountain lake" width="96" height="72" />
+                <a href="images/high_tatras2.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+              </li>
+              <li class="ui-widget-content ui-corner-tr">
+                <h5 class="ui-widget-header">High Tatras 3</h5>
+                <img src="images/high_tatras3_min.jpg" alt="Planning the ascent" width="96" height="72" />
+                <a href="images/high_tatras3.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+              </li>
+              <li class="ui-widget-content ui-corner-tr">
+                <h5 class="ui-widget-header">High Tatras 4</h5>
+                <img src="images/high_tatras4_min.jpg" alt="On top of Kozi kopka" width="96" height="72" />
+                <a href="images/high_tatras4.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+                <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+              </li>
+            </ul>
+
+            <div id="trash" class="ui-widget-content ui-state-default">
+              <h4 class="ui-widget-header"><span class="ui-icon ui-icon-trash">Trash</span> Trash</h4>
+            </div>
+
+            </div>
+            
+            
+        </div>
+        
+        <div class="cart-ex">
+            
+            <!-- http://jqueryui.com/droppable/#shopping-cart -->
+            <!--
+            <div id="products">
+                <h1 class="ui-widget-header">Products</h1>
+                <div id="catalog">
+                  <h2><a href="#">T-Shirts</a></h2>
+                  <div>
+                    <ul>
+                      <li>Lolcat Shirt</li>
+                      <li>Cheezeburger Shirt</li>
+                      <li>Buckit Shirt</li>
+                    </ul>
+                  </div>
+                  <h2><a href="#">Bags</a></h2>
+                  <div>
+                    <ul>
+                      <li>Zebra Striped</li>
+                      <li>Black Leather</li>
+                      <li>Alligator Leather</li>
+                    </ul>
+                  </div>
+                  <h2><a href="#">Gadgets</a></h2>
+                  <div>
+                    <ul>
+                      <li>iPhone</li>
+                      <li>iPod</li>
+                      <li>iPad</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div id="cart">
+                <h1 class="ui-widget-header">Shopping Cart</h1>
+                <div class="ui-widget-content">
+                  <ol>
+                    <li class="placeholder">Add your items here</li>
+                  </ol>
+                </div>
+              </div>  
+            -->
+        </div>
+        
+        <div>
+            * Apply color coding to cats and/or tags
+            <br/>
+            
+        </div>
+        
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script>window.jQuery.ui || document.write('<script src="js/libs/jqueryui-1.10.0/jquery-ui.min.js"><\/script>')</script>
+        <script src="js/libs/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="js/feeds.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            /*var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));*/
+        </script>
+    </body>
+</html>
